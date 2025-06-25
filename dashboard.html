@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard SMM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <h2>Selamat Datang, <span id="namaUser"></span></h2>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <div class="content">
+    <h3>Tambah Pesanan</h3>
+    <input type="text" id="jenis" placeholder="Jenis Layanan (e.g. Followers IG)">
+    <input type="number" id="jumlah" placeholder="Jumlah">
+    <input type="text" id="link" placeholder="Link Akun / Postingan">
+    <button onclick="tambahPesanan()">Kirim Pesanan</button>
+    <div id="pesan"></div>
+
+    <hr/>
+    <h3>Riwayat Pesanan</h3>
+    <div id="riwayat"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
